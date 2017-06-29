@@ -17,7 +17,8 @@
     "sinon-chai": "^2.11.0"
   },
   "scripts": {
-    "test": "istanbul cover --report lcov --report json --report text --report html _mocha -- -r ./test/testConfig.js test/**/*-test.js"
+    "test": "istanbul cover --report lcov --report json --report text --report html _mocha -- -r ./test/testConfig.js test/**/*-test.js",
+    "dev": "nodemon server.js"    
   },
   "keywords": [],
   "author": "",
