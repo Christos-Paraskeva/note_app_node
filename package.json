@@ -1,15 +1,23 @@
 {
   "name": "note_app_node",
   "version": "1.0.0",
-  "description": "",
+  "description": "Note App",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "mongodb": "^2.2.29"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "sinon": "^2.3.6",
+    "sinon-chai": "^2.11.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "istanbul cover --report lcov --report json --report text --report html _mocha -- -r ./test/testConfig.js test/**/*-test.js"
   },
   "keywords": [],
   "author": "",
